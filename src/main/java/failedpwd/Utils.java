@@ -4,7 +4,7 @@ import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.streaming.api.datastream.DataStream;
 
 public class Utils {
-	
+	@SuppressWarnings("serial")
 	//Here we can filter a stream of events to only have events on a pattern we supply
 		static DataStream<String> pfilter (DataStream<String> stream, String pattern) {
 			DataStream<String> streamOut = stream.filter(new FilterFunction<String>() {

@@ -11,9 +11,13 @@ You can run from the Test.java file and you will see a bunch of flink status mes
 
 Sample Alert: {ALERT- 4 failed passwords in 1 minute=[(1,Jan 13 20:22:30,host1,sshd[21487]:,root,192.168.20.185), (1,Jan 13 20:22:28,host1,sshd[21487]:,root,192.168.20.185), (1,Jan 13 20:23:00,host1,sshd[21487]:,root,192.168.20.185), (1,Jan 13 20:22:32,host1,sshd[21487]:,root,192.168.20.185)]}
 
-The test file writes to "C:\\tmp\\flink\\test\\results.txt"
+The test file writes to "data\\results\\alerts\\results.txt"
 
-### Setting up flink with Eclipse
+### Editing Maven
+Maven is set up my paths and groupIDs and such.
+You can edit them in the POM file in the repo or set up flink from scratch.
+
+### Setting up flink from scratch with Eclipse
 https://ci.apache.org/projects/flink/flink-docs-stable/dev/projectsetup/java_api_quickstart.html
 
 Enter at command line
@@ -52,4 +56,4 @@ And add the CEP jar file to the build path (I did this by accepting a reco in Ec
 
 ### Other notes
 * log4j and gson libraries are included for future (likely) use.
-* I created this in a Eclipse or IDEA last year, and have ported it to VScode with no problems.
+* I created this in a Eclipse last year, and have ported it to VScode with no problems.
